@@ -44,10 +44,10 @@ def is_valid_password(password):
         elif character in SPECIAL_CHARACTERS:
             number_of_special += 1
     #  Print number of different characters
-    print(f"Upper(s): {number_of_upper}")
-    print(f"Lower(s): {number_of_lower}")
-    print(f"Digit(s): {number_of_digit}")
-    print(f"Special(s){number_of_special}")
+    # print(f"Upper(s): {number_of_upper}")
+    # print(f"Lower(s): {number_of_lower}")
+    # print(f"Digit(s): {number_of_digit}")
+    # print(f"Special(s){number_of_special}")
 
     #  if any 'normal' counts = zero, return False
     if number_of_lower == 0 or number_of_upper == 0 or number_of_digit == 0 or number_of_special == 0:
