@@ -43,6 +43,7 @@ def is_valid_password(password):
             number_of_digit += 1
         elif character in SPECIAL_CHARACTERS:
             number_of_special += 1
+    #  Print number of different characters
     print(f"Upper(s): {number_of_upper}")
     print(f"Lower(s): {number_of_lower}")
     print(f"Digit(s): {number_of_digit}")
