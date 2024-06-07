@@ -37,16 +37,16 @@ def is_valid_password(password):
     for character in password:  # counts each kind of character
         if character.islower():
             number_of_lower += 1
-            print(f"Upper(s): {number_of_lower}")  # testing
         elif character.isupper():
             number_of_upper += 1
-            print(f"Lower(s): {number_of_lower}")  # testing
         elif character.isdigit():
             number_of_digit += 1
-            print(f"Digit(s): {number_of_digit}")  # testing
         elif character in SPECIAL_CHARACTERS:
             number_of_special += 1
-            print(f"Special(s){number_of_special}")  # testing
+    print(f"Upper(s): {number_of_upper}")
+    print(f"Lower(s): {number_of_lower}")
+    print(f"Digit(s): {number_of_digit}")
+    print(f"Special(s){number_of_special}")
 
     #  if any 'normal' counts = zero, return False
     if number_of_lower == 0 or number_of_upper == 0 or number_of_digit == 0 or number_of_special == 0:
