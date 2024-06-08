@@ -7,11 +7,11 @@ File reading applications and practice
 FILENAME = 'name.txt'
 
 out_file = open(FILENAME, 'w')
-
-name = input("Enter name: ")
+name = input("Enter name: ").upper()
 print(name, file=out_file)
-
 out_file.close()
 
-
-
+out_file = open(FILENAME, 'r')
+for line in open(FILENAME):
+    print(f"Hi {name}!")
+out_file.close()
